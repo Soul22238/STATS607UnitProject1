@@ -1,30 +1,39 @@
 import pandas as pd
 import torch
 from torch.utils.data import Dataset
-from torch import nn
 import transformers
 from torch.nn.utils.rnn import pad_sequence
-conll2000_dataset = pd.read_csv('conll2000.csv', usecols=('tokens', 'pos_tags'))
-conll2000_dataset['tokens'] = conll2000_dataset['tokens'].apply(lambda x: ast.literal_eval(x))
-conll2000_dataset['pos_tags'] = conll2000_dataset['pos_tags'].apply(lambda x: ast.literal_eval(x))
+
 
 class POSTagDataset(Dataset):
-    """Dataset for POS tagging"""
+    """Dataset for POS tagging.
+
+    Args:
+        data (pd.DataFrame): DataFrame containing token and POS tag sequences.
+        tokenizer (transformers.AutoTokenizer): Tokenizer for converting tokens to IDs.
+
+    Attributes:
+        pos_tags (dict): Mapping from POS tag string to integer ID.
+        data (list): List of processed data samples, each as a dict.
+    """
 
     def __init__(self, data: pd.DataFrame, tokenizer: transformers.AutoTokenizer):
+        """Initialize the POSTagDataset.
+
+        Builds the POS tag dictionary and processes the input data.
+
+        Args:
+            data (pd.DataFrame): DataFrame with 'tokens' and 'pos_tags' columns.
+            tokenizer (transformers.AutoTokenizer): Tokenizer for token ID conversion.
+        """
         super().__init__()
-
-        # Fill in this dictionary by adding the rest of the POS tags
         self.pos_tags = {'[PAD]': 0, '[CLS]': 1, '[SEP]': 2}
-
-        # Append each entry to this list
         self.data = []
 
-        ############################## START OF YOUR CODE ##############################
         num = 3
         for ind, tokens in enumerate(data["tokens"]):
             tokens_change = [token.lower() for token in tokens]
-            tokens_change.insert(0,"[CLS]")
+            tokens_change.insert(0, "[CLS]")
             tokens_change.append("[SEP]")
             input_ids = tokenizer.convert_tokens_to_ids(tokens_change)
             pos_ids = [1]
@@ -36,51 +45,46 @@ class POSTagDataset(Dataset):
             pos_ids.append(2)
             self.data.append({
                 "input_ids": input_ids,
-                "pos_ids":pos_ids,
-                "tokens":tokens_change
+                "pos_ids": pos_ids,
+                "tokens": tokens_change
             })
-    
-        ############################### END OF YOUR CODE ###############################
-    
+
     def __len__(self):
-        ############################## START OF YOUR CODE ##############################
+        """Return the number of samples in the dataset."""
         return len(self.data)
-    
-        ############################### END OF YOUR CODE ###############################
 
     def __getitem__(self, idx):
-        ############################## START OF YOUR CODE ##############################
+        """Get a single sample by index.
+
+        Args:
+            idx (int): Index of the sample.
+
+        Returns:
+            dict: Sample containing 'input_ids', 'pos_ids', and 'tokens'.
+        """
         return self.data[idx]
-    
-        ############################### END OF YOUR CODE ###############################
 
 
 def basic_collate_fn(batch):
-    """Collate function for basic setting."""
+    """Collate function for batching POSTagDataset samples.
 
-    inputs = None
-    outputs = None
+    Pads input and output sequences to the same length for batching.
 
-    ############################## START OF YOUR CODE ##############################
-    # Formalize input such that they are all of same length
+    Args:
+        batch (list): List of samples from POSTagDataset.
+
+    Returns:
+        tuple: Dictionary of padded inputs and tensor of padded outputs.
+    """
     inputs = [torch.tensor(data["input_ids"]) for data in batch]
     inputs = pad_sequence(inputs, batch_first=True, padding_value=0)
 
-    # Formalize output such that they are all of same length
     outputs = [torch.tensor(data["pos_ids"]) for data in batch]
     outputs = pad_sequence(outputs, batch_first=True, padding_value=0)
 
-    attention_mask = [torch.ones(size = (len(data["input_ids"]),)) for data in batch]
+    attention_mask = [torch.ones(size=(len(data["input_ids"]),)) for data in batch]
     attention_mask = pad_sequence(attention_mask, batch_first=True, padding_value=0)
-    inputs = {"input_ids":inputs, "attention_mask":attention_mask}
-    # print(inputs, outputs)
-    # print(inputs["input_ids"].shape, inputs["attention_mask"].shape, outputs.shape)
-
-    ############################### END OF YOUR CODE ###############################
+    inputs = {"input_ids": inputs, "attention_mask": attention_mask}
 
     return inputs, outputs
 
-dataset = POSTagDataset(conll2000_dataset, tokenizer)
-(train, val, test) = torch.utils.data.random_split(dataset, [0.8, 0.1, 0.1], generator=torch.Generator().manual_seed(42))
-
-print(dataset[3]) # verify that this has the correct structure
