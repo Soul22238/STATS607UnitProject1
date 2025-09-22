@@ -37,7 +37,7 @@ class POSTagDataset(Dataset):
             tokens_change.append("[SEP]")
             input_ids = tokenizer.convert_tokens_to_ids(tokens_change)
             pos_ids = [1]
-            for tk_id, pos in enumerate(data["pos_tags"][ind]):
+            for _, pos in enumerate(data["pos_tags"][ind]):
                 if pos not in self.pos_tags:
                     self.pos_tags[pos] = num
                     num += 1

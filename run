@@ -1,6 +1,36 @@
-# create a virtual environment
+#!/bin/bash
 
+# Check and setup virtual environment
+if [ ! -d "env" ]; then
+    echo "Creating new virtual environment..."
+    python3 -m venv env
+else
+    echo "Virtual environment exists, using existing one..."
+fi
 
-python3 -m venv env
 source env/bin/activate
+
+# Install/update dependencies
+echo "Installing/updating dependencies..."
 pip install -r requirements.txt
+
+# Check and create directories if they don't exist
+if [ ! -d "artifacts" ]; then
+    echo "Creating artifacts directory..."
+    mkdir -p artifacts
+fi
+
+if [ ! -d "results" ]; then
+    echo "Creating results directory..."
+    mkdir -p results
+fi
+
+# Run training
+echo "Starting training..."
+python3 src/analysis/train.py
+
+# Run evaluation
+echo "Evaluating model..."
+python3 src/pipeline/results.py
+
+echo "Done! Check results/pos_accuracy.json for accuracy metrics."
