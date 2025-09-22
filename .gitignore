@@ -20,4 +20,7 @@ __pycache__/
 .DS_Store
 
 # Remove large model files
-artifacts/*.pts
+artifacts/*.pt
+
+# Ignore irrelevant files
+test_demo.py

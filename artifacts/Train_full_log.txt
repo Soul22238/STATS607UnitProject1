@@ -1,49 +1,49 @@
 ------------------------ Start Training ------------------------
-Epoch No. 1--Iteration No. 26-- batch loss = 1.5087
-Validation accuracy: 0.6170
-Validation loss: 1.4691
-Epoch No. 2--Iteration No. 52-- batch loss = 0.6398
-Validation accuracy: 0.8874
-Validation loss: 0.4847
-Epoch No. 3--Iteration No. 78-- batch loss = 0.4173
-Validation accuracy: 0.9201
-Validation loss: 0.3220
-Epoch No. 4--Iteration No. 104-- batch loss = 0.2301
-Validation accuracy: 0.9330
-Validation loss: 0.2575
-Epoch No. 5--Iteration No. 130-- batch loss = 0.2005
-Validation accuracy: 0.9352
-Validation loss: 0.2366
-Epoch No. 6--Iteration No. 156-- batch loss = 0.0996
-Validation accuracy: 0.9427
-Validation loss: 0.2186
-Epoch No. 7--Iteration No. 182-- batch loss = 0.1635
-Validation accuracy: 0.9433
-Validation loss: 0.2120
-Epoch No. 8--Iteration No. 208-- batch loss = 0.1045
-Validation accuracy: 0.9448
-Validation loss: 0.2304
-Epoch No. 9--Iteration No. 234-- batch loss = 0.0704
-Validation accuracy: 0.9456
-Validation loss: 0.2442
-Epoch No. 10--Iteration No. 260-- batch loss = 0.0705
+Epoch No. 1--Iteration No. 26-- batch loss = 1.4619
+Validation accuracy: 0.6892
+Validation loss: 1.4189
+Epoch No. 2--Iteration No. 52-- batch loss = 0.3956
+Validation accuracy: 0.8887
+Validation loss: 0.5126
+Epoch No. 3--Iteration No. 78-- batch loss = 0.4153
+Validation accuracy: 0.9179
+Validation loss: 0.3093
+Epoch No. 4--Iteration No. 104-- batch loss = 0.3015
+Validation accuracy: 0.9338
+Validation loss: 0.2464
+Epoch No. 5--Iteration No. 130-- batch loss = 0.1379
+Validation accuracy: 0.9361
+Validation loss: 0.2149
+Epoch No. 6--Iteration No. 156-- batch loss = 0.1898
+Validation accuracy: 0.9417
+Validation loss: 0.2493
+Epoch No. 7--Iteration No. 182-- batch loss = 0.0672
+Validation accuracy: 0.9429
+Validation loss: 0.2253
+Epoch No. 8--Iteration No. 208-- batch loss = 0.0455
+Validation accuracy: 0.9458
+Validation loss: 0.2199
+Epoch No. 9--Iteration No. 234-- batch loss = 0.1263
+Validation accuracy: 0.9445
+Validation loss: 0.2003
+Epoch No. 10--Iteration No. 260-- batch loss = 0.0413
+Validation accuracy: 0.9476
+Validation loss: 0.2163
+Epoch No. 11--Iteration No. 286-- batch loss = 0.0445
 Validation accuracy: 0.9489
-Validation loss: 0.2248
-Epoch No. 11--Iteration No. 286-- batch loss = 0.0245
-Validation accuracy: 0.9452
-Validation loss: 0.2546
-Epoch No. 12--Iteration No. 312-- batch loss = 0.0975
+Validation loss: 0.2131
+Epoch No. 12--Iteration No. 312-- batch loss = 0.0317
 Validation accuracy: 0.9464
-Validation loss: 0.2593
-Epoch No. 13--Iteration No. 338-- batch loss = 0.0455
-Validation accuracy: 0.9491
-Validation loss: 0.2378
-Epoch No. 14--Iteration No. 364-- batch loss = 0.0912
-Validation accuracy: 0.9477
-Validation loss: 0.2219
-Epoch No. 15--Iteration No. 390-- batch loss = 0.0119
-Validation accuracy: 0.9466
-Validation loss: 0.2322
-Training lasted 2.34 minutes
+Validation loss: 0.2225
+Epoch No. 13--Iteration No. 338-- batch loss = 0.0336
+Validation accuracy: 0.9479
+Validation loss: 0.2071
+Epoch No. 14--Iteration No. 364-- batch loss = 0.0139
+Validation accuracy: 0.9499
+Validation loss: 0.2240
+Epoch No. 15--Iteration No. 390-- batch loss = 0.0586
+Validation accuracy: 0.9458
+Validation loss: 0.2608
+Training lasted 2.04 minutes
 ------------------------ Training Done ------------------------
-train_model {'train_loss': [2.0510928630828857, 0.8305707573890686, 0.43859022855758667, 0.3480031192302704, 0.23361748456954956, 0.21226783096790314, 0.17982003092765808, 0.147698774933815, 0.10964041948318481, 0.0999019518494606, 0.08302688598632812, 0.07184325903654099, 0.07046224921941757, 0.07938987761735916, 0.0609465166926384, 0.061738673597574234, 0.04264288768172264, 0.036322496831417084, 0.03349152207374573], 'train_loss_ind': [20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380], 'val_loss': [1.4691434502601624, 0.4846910089254379, 0.32199202477931976, 0.2575065866112709, 0.23664627224206924, 0.2185720019042492, 0.21196148917078972, 0.23040026798844337, 0.24415996670722961, 0.22475344687700272, 0.25457077473402023, 0.25932228565216064, 0.2377794198691845, 0.22185104340314865, 0.23216510564088821], 'val_loss_ind': [26, 52, 78, 104, 130, 156, 182, 208, 234, 260, 286, 312, 338, 364, 390], 'accuracy': 0.9491000771522522}
+train_model {'train_loss': [1.9341368675231934, 0.8157855868339539, 0.4079490303993225, 0.3128158152103424, 0.2500665485858917, 0.23125313222408295, 0.16350014507770538, 0.1406286507844925, 0.1269076019525528, 0.09591558575630188, 0.1030929833650589, 0.0851951539516449, 0.04134316369891167, 0.06444387137889862, 0.044874150305986404, 0.04555889964103699, 0.03017091006040573, 0.0454009585082531, 0.03517862781882286], 'train_loss_ind': [20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380], 'val_loss': [1.418935090303421, 0.5126238390803337, 0.30925045162439346, 0.24636631831526756, 0.21492039412260056, 0.24928447604179382, 0.22528591006994247, 0.2198755219578743, 0.20028704963624477, 0.21631410717964172, 0.21305762976408005, 0.22253701463341713, 0.20712349377572536, 0.2239847555756569, 0.2608085386455059], 'val_loss_ind': [26, 52, 78, 104, 130, 156, 182, 208, 234, 260, 286, 312, 338, 364, 390], 'accuracy': 0.949874222278595}
