@@ -1,0 +1,28 @@
+{
+    "paths": {
+        "data_path": "./data/conll2000.csv",
+        "artifacts_dir": "../../artifacts",
+        "results_dir": "../../results"
+    },
+    "model": {
+        "name": "distilbert-base-uncased",
+        "hidden_dim": 768
+    },
+    "training": {
+        "learning_rate": 5e-5,
+        "weight_decay": 0,
+        "batch_size": 64,
+        "num_epochs": {
+            "test_fit": 25,
+            "full_train": 15
+        },
+        "collect_cycle": {
+            "test_fit": 5,
+            "full_train": 20
+        },
+        "train_split": 0.8,
+        "val_split": 0.1,
+        "test_split": 0.1,
+        "random_seed": 42
+    }
+}

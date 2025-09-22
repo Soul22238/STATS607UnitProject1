@@ -1,79 +1,79 @@
 ------------------------ Start Training ------------------------
-Epoch No. 1--Iteration No. 4-- batch loss = 3.3938
-Validation accuracy: 0.2441
-Validation loss: 3.2458
-Epoch No. 2--Iteration No. 8-- batch loss = 2.9370
-Validation accuracy: 0.3379
-Validation loss: 2.8338
-Epoch No. 3--Iteration No. 12-- batch loss = 2.7315
-Validation accuracy: 0.4153
-Validation loss: 2.5137
-Epoch No. 4--Iteration No. 16-- batch loss = 2.2940
-Validation accuracy: 0.4905
-Validation loss: 2.1802
-Epoch No. 5--Iteration No. 20-- batch loss = 1.8498
-Validation accuracy: 0.5550
-Validation loss: 1.8233
-Epoch No. 6--Iteration No. 24-- batch loss = 1.6344
-Validation accuracy: 0.5785
-Validation loss: 1.4782
-Epoch No. 7--Iteration No. 28-- batch loss = 1.3615
-Validation accuracy: 0.7310
-Validation loss: 1.2686
-Epoch No. 8--Iteration No. 32-- batch loss = 1.1031
-Validation accuracy: 0.7993
-Validation loss: 1.0195
-Epoch No. 9--Iteration No. 36-- batch loss = 0.8405
-Validation accuracy: 0.8273
-Validation loss: 0.8415
-Epoch No. 10--Iteration No. 40-- batch loss = 0.8512
-Validation accuracy: 0.8589
-Validation loss: 0.6863
-Epoch No. 11--Iteration No. 44-- batch loss = 0.5803
-Validation accuracy: 0.8815
-Validation loss: 0.5573
-Epoch No. 12--Iteration No. 48-- batch loss = 0.6618
-Validation accuracy: 0.9031
-Validation loss: 0.4537
-Epoch No. 13--Iteration No. 52-- batch loss = 0.3764
-Validation accuracy: 0.9228
-Validation loss: 0.3846
-Epoch No. 14--Iteration No. 56-- batch loss = 0.3451
-Validation accuracy: 0.9361
-Validation loss: 0.3607
-Epoch No. 15--Iteration No. 60-- batch loss = 0.3589
-Validation accuracy: 0.9454
-Validation loss: 0.2880
-Epoch No. 16--Iteration No. 64-- batch loss = 0.3611
-Validation accuracy: 0.9543
-Validation loss: 0.2196
-Epoch No. 17--Iteration No. 68-- batch loss = 0.3680
-Validation accuracy: 0.9593
-Validation loss: 0.1882
-Epoch No. 18--Iteration No. 72-- batch loss = 0.2394
-Validation accuracy: 0.9618
-Validation loss: 0.1814
-Epoch No. 19--Iteration No. 76-- batch loss = 0.3103
-Validation accuracy: 0.9693
-Validation loss: 0.1597
-Epoch No. 20--Iteration No. 80-- batch loss = 0.1525
-Validation accuracy: 0.9687
-Validation loss: 0.1390
-Epoch No. 21--Iteration No. 84-- batch loss = 0.1740
-Validation accuracy: 0.9768
-Validation loss: 0.1317
-Epoch No. 22--Iteration No. 88-- batch loss = 0.1684
-Validation accuracy: 0.9809
-Validation loss: 0.1156
-Epoch No. 23--Iteration No. 92-- batch loss = 0.1227
-Validation accuracy: 0.9828
-Validation loss: 0.1125
-Epoch No. 24--Iteration No. 96-- batch loss = 0.1706
-Validation accuracy: 0.9842
-Validation loss: 0.1043
-Epoch No. 25--Iteration No. 100-- batch loss = 0.1130
-Validation accuracy: 0.9846
-Validation loss: 0.0805
+Epoch No. 1--Iteration No. 4-- batch loss = 3.4873
+Validation accuracy: 0.2034
+Validation loss: 3.3492
+Epoch No. 2--Iteration No. 8-- batch loss = 2.8994
+Validation accuracy: 0.3327
+Validation loss: 2.8719
+Epoch No. 3--Iteration No. 12-- batch loss = 2.4742
+Validation accuracy: 0.4296
+Validation loss: 2.5289
+Epoch No. 4--Iteration No. 16-- batch loss = 2.1729
+Validation accuracy: 0.4844
+Validation loss: 2.1392
+Epoch No. 5--Iteration No. 20-- batch loss = 1.9542
+Validation accuracy: 0.5796
+Validation loss: 1.8014
+Epoch No. 6--Iteration No. 24-- batch loss = 1.5387
+Validation accuracy: 0.6439
+Validation loss: 1.4836
+Epoch No. 7--Iteration No. 28-- batch loss = 1.1876
+Validation accuracy: 0.7530
+Validation loss: 1.1646
+Epoch No. 8--Iteration No. 32-- batch loss = 0.9892
+Validation accuracy: 0.8053
+Validation loss: 0.9797
+Epoch No. 9--Iteration No. 36-- batch loss = 0.7447
+Validation accuracy: 0.8382
+Validation loss: 0.7929
+Epoch No. 10--Iteration No. 40-- batch loss = 0.6765
+Validation accuracy: 0.8690
+Validation loss: 0.6463
+Epoch No. 11--Iteration No. 44-- batch loss = 0.6190
+Validation accuracy: 0.8907
+Validation loss: 0.5724
+Epoch No. 12--Iteration No. 48-- batch loss = 0.4930
+Validation accuracy: 0.9025
+Validation loss: 0.4626
+Epoch No. 13--Iteration No. 52-- batch loss = 0.4370
+Validation accuracy: 0.9236
+Validation loss: 0.3877
+Epoch No. 14--Iteration No. 56-- batch loss = 0.4226
+Validation accuracy: 0.9348
+Validation loss: 0.3594
+Epoch No. 15--Iteration No. 60-- batch loss = 0.3496
+Validation accuracy: 0.9433
+Validation loss: 0.2861
+Epoch No. 16--Iteration No. 64-- batch loss = 0.3173
+Validation accuracy: 0.9433
+Validation loss: 0.2916
+Epoch No. 17--Iteration No. 68-- batch loss = 0.2035
+Validation accuracy: 0.9539
+Validation loss: 0.2402
+Epoch No. 18--Iteration No. 72-- batch loss = 0.2425
+Validation accuracy: 0.9607
+Validation loss: 0.1834
+Epoch No. 19--Iteration No. 76-- batch loss = 0.3035
+Validation accuracy: 0.9665
+Validation loss: 0.1641
+Epoch No. 20--Iteration No. 80-- batch loss = 0.1441
+Validation accuracy: 0.9685
+Validation loss: 0.1492
+Epoch No. 21--Iteration No. 84-- batch loss = 0.1724
+Validation accuracy: 0.9721
+Validation loss: 0.1492
+Epoch No. 22--Iteration No. 88-- batch loss = 0.1948
+Validation accuracy: 0.9770
+Validation loss: 0.1222
+Epoch No. 23--Iteration No. 92-- batch loss = 0.1795
+Validation accuracy: 0.9770
+Validation loss: 0.1172
+Epoch No. 24--Iteration No. 96-- batch loss = 0.1581
+Validation accuracy: 0.9789
+Validation loss: 0.1092
+Epoch No. 25--Iteration No. 100-- batch loss = 0.1491
+Validation accuracy: 0.9830
+Validation loss: 0.0973
 Training lasted 0.67 minutes
 ------------------------ Training Done ------------------------
-train_model {'train_loss': [3.2542569637298584, 2.779770612716675, 2.4064137935638428, 1.8498181104660034, 1.613446831703186, 1.2835865020751953, 0.9792240262031555, 0.8511961698532104, 0.6045640110969543, 0.494882196187973, 0.41944658756256104, 0.3589421808719635, 0.26816534996032715, 0.2291048765182495, 0.22134056687355042, 0.15252834558486938, 0.18299055099487305, 0.16268175840377808, 0.12617363035678864, 0.11299368739128113], 'train_loss_ind': [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100], 'val_loss': [3.2458183765411377, 2.8337636590003967, 2.5137399435043335, 2.180218458175659, 1.8233451545238495, 1.478189468383789, 1.2686088383197784, 1.0195319950580597, 0.8414539247751236, 0.6862823665142059, 0.5572836399078369, 0.4537482112646103, 0.3845910131931305, 0.3606545105576515, 0.28802649676799774, 0.2196330837905407, 0.18824191950261593, 0.1813787929713726, 0.15970519557595253, 0.13902714289724827, 0.13173255324363708, 0.11556652560830116, 0.11249195598065853, 0.10425897315144539, 0.08050950057804585], 'val_loss_ind': [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100], 'accuracy': 0.9845619201660156}
+train_model {'train_loss': [3.359262704849243, 2.805032253265381, 2.331796407699585, 1.9541670083999634, 1.495762825012207, 1.2057490348815918, 0.9750286936759949, 0.676483154296875, 0.5842555165290833, 0.49337902665138245, 0.4218183755874634, 0.34963977336883545, 0.2934713065624237, 0.2801398038864136, 0.21324355900287628, 0.1441245973110199, 0.17422913014888763, 0.1510627418756485, 0.13722987473011017, 0.14914090931415558], 'train_loss_ind': [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100], 'val_loss': [3.34923779964447, 2.871911406517029, 2.5289183259010315, 2.1392127871513367, 1.801407814025879, 1.4836086630821228, 1.164649873971939, 0.9796765446662903, 0.7928685247898102, 0.646303579211235, 0.5724293142557144, 0.4625858888030052, 0.38772788643836975, 0.3594324588775635, 0.2860870882868767, 0.2915732339024544, 0.2401728555560112, 0.183429267257452, 0.1641048565506935, 0.14923404715955257, 0.1492333598434925, 0.12222480401396751, 0.11721193231642246, 0.10923248715698719, 0.09734554961323738], 'val_loss_ind': [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100], 'accuracy': 0.9829688668251038}
